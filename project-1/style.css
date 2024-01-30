@@ -1,0 +1,947 @@
+/* * {} */
+
+body {
+    overflow-x: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+/* navbar  */
+.nav-parent {
+    /* background-color: yellow; */
+    width: 1352px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    background-color: lightpink;
+    width: 1250px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 40px;
+    align-items: center;
+    box-shadow: 0px 0px 9px -6px black;
+    z-index: 2;
+}
+
+.nav>a {
+    color: black;
+    text-decoration: none;
+    background-color: lightpink;
+    margin: 20px 0px;
+    padding: 11px 14px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+
+.nav>a.link:hover {
+    /* text-decoration: underline; */
+    border-bottom: 2px solid black;
+}
+
+/* hero section  */
+.hero-section {
+    height: 835px;
+    width: 1375px;
+    display: flex;
+    align-items: center;
+    background-image: url(images/hero-section-image.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+.hero-content {
+    position: absolute;
+    top: 306px;
+}
+
+.content-child-1 {
+    width: 437px;
+    padding: 0px 110px;
+}
+
+.content-child-1>h1 {
+    font-size: 90px;
+    letter-spacing: 7px;
+    line-height: 74px;
+    text-transform: uppercase;
+    /* color: #333333; */
+    color: transparent;
+    font-weight: 700;
+    font-family: 'Unna';
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    width: fit-content;
+}
+
+.content-child-1>h1::before {
+    /* content: "MEET OUR SPEAKERS"; */
+    width: fit-content;
+    content: attr(title);
+    overflow: hidden;
+    position: absolute;
+    color: black;
+    user-select: none;
+    border-right: 1px solid black;
+    animation: abc 3s linear infinite;
+}
+
+@keyframes abc {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+.content-child-1>.p-1 {
+    font-size: 50px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Sacramento";
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content-child-1>.p-2 {
+    line-height: 29px;
+    color: #333333;
+    font-weight: 500;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content-child-1>.content-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content-child-1>.content-btn>button {
+    letter-spacing: 0.5px;
+    color: black;
+    font-weight: bold;
+    border-radius: 23px;
+    width: 152px;
+    height: 46px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 9px;
+    border: 1px solid #e08e9c;
+    cursor: pointer;
+}
+
+.content-child-1>.content-btn>button:hover {
+    background-color: #e08e9c;
+    color: white;
+}
+
+.content-child-1>.content-btn>button:active {
+    background-color: #0048fe;
+    color: white;
+}
+
+
+.hero-image>img {
+    width: 1375px;
+    height: 835px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.texture-1 {
+    position: relative;
+    bottom: 293px;
+    right: 129px;
+}
+
+.texture-2 {
+    position: relative;
+    bottom: 349px;
+    left: 463px;
+}
+
+/* discount  */
+.discount {
+    background-color: #e08e9c;
+    width: 1375px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dis-p1 {
+    font-size: 58px;
+    letter-spacing: 1px;
+    line-height: 67px;
+    color: #f6f6f9;
+    font-weight: 700;
+    font-family: "Unna";
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.dis-p2 {
+    font-size: 63px;
+    color: #f6f6f9;
+    font-weight: 400;
+    font-family: "Sacramento";
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* our-products */
+.our-products {
+    height: 835px;
+    width: 1375px;
+    background-color: #f0f0f0;
+    ;
+}
+
+.our-products-heading {
+    /* background-color: yellow; */
+    width: 500px;
+    height: 264px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-products-heading>h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 74px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Unna";
+    text-align: center;
+}
+
+.our-products-heading>p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.our-products-cards {
+    height: 571px;
+    padding: 0px 110px;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card {
+    /* background-color: lightcoral; */
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-main {
+    /* background-color: lightcyan; */
+    width: fit-content;
+}
+
+.product-image-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-1>.p-img-1 {
+    position: relative;
+    bottom: 42px;
+    right: 6px;
+    height: 245px;
+}
+
+.product-image-1>.p-img-2 {
+    position: relative;
+    bottom: 42px;
+    right: 6px;
+    height: 245px;
+}
+
+.product-image-1>.p-img-3 {
+    position: relative;
+    bottom: 20px;
+    left: 2px;
+    margin-bottom: 47px;
+}
+
+.product-shape {
+    width: 224px;
+    height: 224px;
+    border-radius: 112px;
+    background-color: #efd0ca;
+    position: absolute;
+}
+
+.product-content {
+    /* background-color: aqua; */
+    width: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-content>h2 {
+    margin: 0;
+    font-size: 29px;
+    letter-spacing: 1px;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Unna";
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+
+.product-content>p {
+    margin: 0;
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: justify;
+    padding-top: 7px;
+    padding-bottom: 20px;
+}
+
+.product-content>button {
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 23px;
+    background-color: #a3aa68;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.product-content>button:hover {
+    background-color: #afb580;
+    color: black;
+}
+
+.product-content>button:active {
+    background-color: #0048fe;
+    color: white;
+}
+
+
+/* about-us  */
+.about-us {
+    height: 680px;
+    width: 1375px;
+    background-color: #efd0ca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-child {
+    width: 100%;
+    padding: 0px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-left {
+    width: 70%;
+}
+
+.about-right {
+    width: 30%;
+    position: relative;
+    top: 30px;
+}
+
+.about-shape {
+    width: 424px;
+    height: 507px;
+    border-radius: 49px;
+    background-color: #000000;
+    background-image: url(images/about-us-image-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-right>h1 {
+    margin: 0;
+    font-size: 56px;
+    line-height: 13px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Sacramento";
+}
+
+.about-right>p {
+    margin: 0;
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: justify;
+    padding: 40px 0px;
+}
+
+.about-right>button {
+    width: 152px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.about-right>button:hover {
+    background-color: #444444;
+    color: white;
+    border: none;
+}
+
+.about-right>button:active {
+    background-color: #0048fe;
+    color: white;
+}
+
+/* birthday-bouquet-1  */
+.birthday-bouquet-1 {
+    height: 835px;
+    width: 1375px;
+    background: url(images/bouquet-image-1.png);
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.bouquet-image-1>img {
+    width: 1375px;
+    height: 835px;
+    position: absolute;
+    z-index: -1;
+}
+
+.birthday-content-1 {
+    position: relative;
+    top: 60px;
+}
+
+.birthday-content-1-child {
+    width: 30%;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.birthday-content-1-child>h1 {
+    margin: 0;
+    font-size: 63px;
+    line-height: 13px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Sacramento";
+}
+
+.birthday-content-1-child>p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: justify;
+    padding: 30px 0px;
+}
+
+.birthday-content-1-child>button {
+    width: 152px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.birthday-content-1-child>button:hover {
+    background-color: #444444;
+    color: white;
+    border: none;
+}
+
+.birthday-content-1-child>button:active {
+    background-color: #0048fe;
+    color: white;
+}
+
+/* birthday-bouquet-2 */
+.birthday-bouquet-2 {
+    height: 680px;
+    width: 1375px;
+    background-color: #efd0ca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.birthday-bouquet-2-child {
+    width: 100%;
+    padding: 0px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.birthday-bouquet-2-left {
+    width: 70%;
+}
+
+.birthday-bouquet-2-right {
+    width: 30%;
+    position: relative;
+    top: 30px;
+}
+
+.birthday-bouquet-2-shape {
+    width: 424px;
+    height: 507px;
+    border-radius: 49px;
+    background-color: #000000;
+    background-image: url(images/bouquet-image-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.birthday-bouquet-2-right>h1 {
+    margin: 0;
+    font-size: 56px;
+    line-height: 13px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Sacramento";
+}
+
+.birthday-bouquet-2-right>p {
+    margin: 0;
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: justify;
+    padding: 40px 0px;
+}
+
+.birthday-bouquet-2-right>button {
+    width: 152px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.birthday-bouquet-2-right>button:hover {
+    background-color: #444444;
+    color: white;
+    border: none;
+}
+
+.birthday-bouquet-2-right>button:active {
+    background-color: #0048fe;
+    color: white;
+}
+
+/* lorem-ipsum  */
+.lorem-ipsum {
+    height: 680px;
+    width: 1375px;
+    background-color: #efd0ca;
+}
+
+.lorem-ipsum-heading {
+    width: 500px;
+    height: 264px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lorem-ipsum-heading>h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 74px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Unna";
+    text-align: center;
+}
+
+.lorem-ipsum-heading>p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.lorem-ipsum-shape-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.lorem-ipsum-shape-child {
+    height: 365px;
+    width: 585px;
+    border-radius: 49px;
+    background-color: black;
+    background: linear-gradient(#00000040, #00000040), url(images/lorem-ipsum-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 53px;
+    height: 53px;
+    border-radius: 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* birthday-bouquet-3  */
+.birthday-bouquet-3 {
+    height: 835px;
+    width: 1375px;
+    background: url(images/bouquet-image-3.png);
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.bouquet-image-3>img {
+    width: 1375px;
+    height: 835px;
+    position: absolute;
+    z-index: -1;
+}
+
+.birthday-content-3 {
+    position: relative;
+    top: 30px;
+}
+
+.birthday-content-3-child {
+    width: 30%;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.birthday-content-3-child>h1 {
+    margin: 0;
+    font-size: 63px;
+    line-height: 13px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Sacramento";
+}
+
+.birthday-content-3-child>p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: justify;
+    padding: 30px 0px;
+}
+
+.birthday-content-3-child>button {
+    width: 152px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.birthday-content-3-child>button:hover {
+    background-color: #444444;
+    color: white;
+    border: none;
+}
+
+.birthday-content-3-child>button:active {
+    background-color: #0048fe;
+    color: white;
+}
+
+/* contact  */
+.contact {
+    height: 767px;
+    width: 1375px;
+    background-image: url(images/contact-image.png);
+    background-position: center;
+}
+
+.contact-form-parent {
+    display: flex;
+    justify-content: right;
+}
+
+.contact-form-child {
+    width: 765px;
+    padding: 0px 110px;
+    position: relative;
+    top: 105px;
+}
+
+.contact-form-child>h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 74px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Unna";
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form>input[type=text] {
+    width: 100%;
+    height: 45px;
+    background-color: #efefef;
+    border: 1.5px solid #b0b0b0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    padding: 0px 0px 0px 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form>input[type=email] {
+    width: 100%;
+    height: 45px;
+    background-color: #efefef;
+    border: 1.5px solid #b0b0b0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    padding: 0px 0px 0px 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form>textarea {
+    width: 764px;
+    height: 129px;
+    background-color: #efefef;
+    border: 1.5px solid #b0b0b0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    padding: 10px 0px 0px 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+.form>button {
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 23px;
+    background-color: #a3aa68;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.form>button:hover {
+    background-color: #afb580;
+    color: black;
+}
+
+.form>button:active {
+    background-color: #0048fe;
+    color: white;
+}
+
+/* footer  */
+footer {
+    width: 1375px;
+    height: 454px;
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer {
+    /* height: /571px; */
+    padding: 0px 110px;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    display: block;
+    letter-spacing: 0.7px;
+}
+
+.footer a:hover {
+    color: #efd0ca;
+}
+
+.footer a:active {
+    color: yellow;
+}
+
+.footer h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Unna";
+}
+
+.custom-width {
+    width: 238px;
+}
+
+.social-media {
+    margin: 0px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 32px;
+}
+
+.social-media h1 {
+    display: inline;
+    font-size: 66px;
+    line-height: 88px;
+    color: #efd0ca;
+    font-weight: 400;
+    font-family: "Sacramento";
+    text-align: right;
+}
+
+.fa-brands {
+    font-size: 30px;
+    border-radius: 4px;
+    color: #efd0ca;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    color: white;
+}
+
+.fa-brands:active {
+    color: yellow;
+}
