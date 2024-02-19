@@ -22,8 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500&display=swap"
         rel="stylesheet">
 
-    <!-- internal css  -->
-    <link rel="stylesheet" href="./style_hidden.css">
+    <!-- external css  -->
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- font awesomer  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -193,39 +193,34 @@
                 <h1 class="text-center pb-2 mb-5">MARKET1 SUMMIT IN NUMBERS</h1>
                 <div class="row justify-content-between justify-content-md-evenly">
                     <div class="text-center col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 my-5">
-                        <i class="fa-regular fa-comment-dots fa-shake fa-2xl my-5"
-                            style="color: #ffffff; font-size: 60px;"></i>
-                        <p id="count-1" class=""></p>
+                        <i class="fa-regular fa-comment-dots  fa-2xl my-5" style="color: #ffffff; font-size: 60px;"></i>
+                        <p class="display-1 count-numbers" data-value="1000">000</p>
                         <p class="m-0">SESSIONS</p>
                     </div>
                     <div class="text-center col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 my-5">
-                        <i class="fa-solid fa-clock-rotate-left fa-spin fa-spin-reverse fa-2xl my-5"
+                        <i class="fa-solid fa-clock-rotate-left  fa-spin-reverse fa-2xl my-5"
                             style="color: #ffffff; font-size: 60px;"></i>
-                        <p id="count-1" class=""></p>
+                        <p class="display-1 count-numbers" data-value="12">000</p>
                         <p class="m-0">YEARS</p>
                     </div>
                     <div class="text-center col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 my-5">
-                        <i class="fa-solid fa-calendar-check fa-bounce fa-2xl my-5"
-                            style="color: #ffffff; font-size: 60px;"></i>
-                        <p id="count-1" class=""></p>
+                        <i class="fa-solid fa-calendar-check  fa-2xl my-5" style="color: #ffffff; font-size: 60px;"></i>
+                        <p class="display-1 count-numbers" data-value="64">000</p>
                         <p class="m-0">TOTAL EVENTS</p>
                     </div>
                     <div class="text-center col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 my-5">
-                        <i class="fa-solid fa-briefcase fa-beat fa-2xl my-5"
-                            style="color: #ffffff; font-size: 60px;"></i>
-                        <p id="count-1" class=""></p>
+                        <i class="fa-solid fa-briefcase  fa-2xl my-5" style="color: #ffffff; font-size: 60px;"></i>
+                        <p class="display-1 count-numbers" data-value="1200">000</p>
                         <p class="m-0">COMPANIES</p>
                     </div>
                     <div class="text-center col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 my-5">
-                        <i class="fa-solid fa-location-dot fa-bounce fa-2xl my-5"
-                            style="color: #ffffff; font-size: 60px;"></i>
-                        <p id="count-1" class=""></p>
+                        <i class="fa-solid fa-location-dot  fa-2xl my-5" style="color: #ffffff; font-size: 60px;"></i>
+                        <p class="display-1 count-numbers" data-value="14">000</p>
                         <p class="m-0">CITIES</p>
                     </div>
                     <div class="text-center col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 my-5">
-                        <i class="fa-solid fa-microphone fa-flip fa-2xl my-5"
-                            style="color: #ffffff; font-size: 60px;"></i>
-                        <p id="count-1" class=""></p>
+                        <i class="fa-solid fa-microphone  fa-2xl my-5" style="color: #ffffff; font-size: 60px;"></i>
+                        <p class="display-1 count-numbers" data-value="1071">000</p>
                         <p class="m-0">SPEAKERS</p>
                     </div>
                 </div>
@@ -505,7 +500,7 @@
             <div class="row">
                 <div class="d-flex flex-column text-center pt-5 pb-5" style="height: 200px;">
                     <span class="heading pb-2">PREVIOUS EVENTS</span>
-                    <span class="para pt-4 pb-5">TAKE A TOUR OF OUR PREVIOUS CONFERENCES</span> 
+                    <span class="para pt-4 pb-5">TAKE A TOUR OF OUR PREVIOUS CONFERENCES</span>
                 </div>
 
                 <!-- Carousel -->
@@ -689,15 +684,17 @@
 
 
     <!-- external javaScript  -->
-    <script src="./main.js"></script>
+    <script src="./Js/main.js"></script>
     <!-- <script src="./main_hidden.js"></script> -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+
         AOS.init({
             offset: 200,
             duration: 800,
         });
+
     </script>
 </body>
 
